@@ -44,6 +44,28 @@
 
     </head>
     <!-- chiusura head -->
+
+    <!-- apertura main -->
+    <main>
+
+      <div class="container">
+        <!-- apertura pop_development_courses -->
+        <div class="pop_development_courses">
+          <h2>Popular Development Courses</h2>
+          <div class="course_box d-flex">
+            <div class="course_card" v-for="course in courses">
+              <img :src="`${course.poster}`" alt="">
+              <p>{{course.type}}</p>
+              <h5>{{course.name}}</h5>
+            </div>
+          </div>
+        </div>
+        <!-- chiusura pop_development_courses -->
+      </div>
+
+    </main>
+    <!-- chiusura main -->
+
   </div>
   <!-- chiusura main wrapper -->
 

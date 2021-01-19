@@ -78,6 +78,63 @@ let app = new Vue ({
         </div>
       `
     }
+  },
+
+  data: {
+    courses: [
+      {
+        name: "The Complete iOS 10 & Swift 3 Developer Course",
+        type: "Development",
+        initial_price: 199.99,
+        new_price: 100,
+        votein5: 4,
+        poster: "assets/img/iOS 10.jpg"
+      },
+      {
+        name: "Web Design for Beginners: Real World Coding in HTML & CSS",
+        type: "Development",
+        initial_price: 129.99,
+        new_price: 65,
+        votein5: 4,
+        poster: "assets/img/html&css.jpg"
+      },
+      {
+        name: "GitHub Ultimate: Master Git and GitHub - Beginner to Expert",
+        type: "Development",
+        initial_price: 99.99,
+        new_price: 50,
+        votein5: 4,
+        poster: "assets/img/github.jpg"
+      },
+      {
+        name: "The Complete iOS 11 & Swift Developer Course - Build 20 Apps",
+        type: "Development",
+        initial_price: 199.99,
+        new_price: 100,
+        votein5: 4,
+        poster: "assets/img/ios11.jpg"
+      },
+      {
+        name: "Android Java MasterClass - Become an App Developer",
+        type: "Development",
+        initial_price: 99.99,
+        new_price: 50,
+        votein5: 4,
+        poster: "assets/img/android.jpg"
+      },
+      {
+        name: "Xamarin Forms: Build Native Cross-platform Apps with C#",
+        type: "Development",
+        initial_price: 189.99,
+        new_price: 95,
+        votein5: 4,
+        poster: "assets/img/xamarin.jpg"
+      },
+    ]
+  },
+
+  mounted () {
+    console.log(this.courses);
   }
 
 });

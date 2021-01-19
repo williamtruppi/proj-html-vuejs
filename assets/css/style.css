@@ -147,8 +147,22 @@
   background-position: 70%;
 }
 
-.jumbo_title{
-  height: 100%;
-  width: 50%;
-  background-color: #FF4450;
+/* main */
+
+/* pop_development_courses */
+
+.pop_development_courses {
+  padding: 40px 0;
+}
+
+.course_box{
+  width: 100%;
+}
+
+.course_card {
+  width: calc(100% / 6);
+}
+
+.course_card img{
+  width: 100px;
 }
