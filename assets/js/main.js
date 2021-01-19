@@ -63,6 +63,20 @@ let app = new Vue ({
           </div>
         </div>
       `
+    },
+
+    "navbottom": {
+      template: `
+        <div class="navbottom d-flex">
+          <ul class="d-flex">
+            <li><a href="#"><i class="fas fa-chart-area"></i>Business</a></li>
+            <li><a href="#"><i class="fas fa-palette"></i>Design</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i>Development</a></li>
+            <li><a href="#"><i class="far fa-smile"></i>Lifestyle</a></li>
+            <li><a href="#"><i class="fas fa-mail-bulk"></i>Office Productivity</a></li>
+          </ul>
+        </div>
+      `
     }
   }
 

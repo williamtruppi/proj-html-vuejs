@@ -108,3 +108,47 @@
   border-radius: 15px;
   margin: 0 10px;
 }
+
+/* NAVBOTTOM */
+
+.navbottom{
+  height: 60px;
+  background-color: #273044;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbottom ul{
+  list-style: none;
+}
+
+.navbottom i{
+  margin-right: 5px;
+}
+
+.navbottom ul li{
+  height: 100%;
+  margin: 0 10px
+}
+
+.navbottom a{
+  text-decoration: none;
+  color: white;
+}
+
+/* jumbotron */
+
+.jumbotron{
+  height: 350px;
+  margin-top: 20px;
+  background-image: url(../img/jumbotron.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70%;
+}
+
+.jumbo_title{
+  height: 100%;
+  width: 50%;
+  background-color: #FF4450;
+}
