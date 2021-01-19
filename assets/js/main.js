@@ -33,6 +33,36 @@ let app = new Vue ({
       </div>
 
       `,
+    },
+
+    "navmiddle": {
+      template: `
+        <div class="navmiddle container d-flex">
+          
+          <div class="navmiddle_left">
+            <img src="assets/img/MasterStudy.svg" alt="">
+          </div>
+
+          <div class="navmiddle_center d-flex">
+            <span>CATEGORY <i class="fas fa-bars"></i></span>
+            <input type="text" placeholder="Search Courses">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+
+          <div class="navmiddle_right d-flex">
+          
+          <a href="#"><i class="fas fa-bullhorn"></i>Become an Instructor</a>
+          <a href="#"><i class="fas fa-briefcase"></i>For Enterprise</a>
+
+            <ul class="d-flex">
+              <li><a href="#"><i class="far fa-user"></i> Log in</a></li>
+              <li><a href="#" id="sign_up">SIGN UP</a></li>
+              <li><a href="#"><i class="far fa-bookmark"></i></a></li>
+            </ul>
+          
+          </div>
+        </div>
+      `
     }
   }
 

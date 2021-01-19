@@ -21,11 +21,10 @@
 /* navtop */
 
 .navtop{
-  height: 50px;
+  height: 40px;
   align-items: center;
   justify-content: space-between;
   color: grey;
-  border-bottom: 2px solid lightgrey;
 }
 
 .navtop_right ul{
@@ -34,10 +33,78 @@
 }
 
 .navtop_right ul li{
-  padding: 0 10px;
+  padding-left: 10px;
 }
 
 .navtop_right ul li a{
   text-decoration: none;
   color: grey;
+}
+
+/* navmiddle */
+
+.navmiddle {
+  padding: 40px 0;
+  height: 60px;
+  align-items: center;
+}
+
+/* NAV MIDDLE LEFT */
+
+.navmiddle_left{
+  width: 20%;
+}
+
+/* NAV MIDDLE CENTER */
+
+.navmiddle_center {
+  width: 37%;
+  margin-left: 15px;
+  align-items: center;
+}
+
+.navmiddle_center span {
+  margin-right: 5px;
+}
+
+.navmiddle_center input {
+  padding: 5px;
+  width: 63%;
+}
+
+.navmiddle_center button {
+  margin-left: 5px;
+  padding: 5px;
+  background-color: #457992;
+  color: white;
+}
+
+/* NAV MIDDLE RIGHT */
+
+.navmiddle_right{
+  width: 43%;
+  justify-content: flex-end;
+  font-size: 15px;
+}
+
+.navmiddle_right ul{
+  list-style: none;
+  margin-left: 30px;
+}
+
+.navmiddle_right a:first-child{
+  margin: 0 5px;
+}
+
+.navmiddle_right a{
+  text-decoration: none;
+  color: grey;
+}
+
+#sign_up{
+  padding: 10px 15px;
+  color: white;
+  background-color: #FF4450;
+  border-radius: 15px;
+  margin: 0 10px;
 }
