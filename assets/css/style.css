@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* classi utlity */
+
+.container{
+  width: 90vw;
+  margin: auto;
+}
+
+.d-flex{
+  display: flex;
+}
+
+/* HEAD */
+
+/* navtop */
+
+.navtop{
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  color: grey;
+  border-bottom: 2px solid lightgrey;
+}
+
+.navtop_right ul{
+  list-style: none;
+  margin-left: 10px;
+}
+
+.navtop_right ul li{
+  padding: 0 10px;
+}
+
+.navtop_right ul li a{
+  text-decoration: none;
+  color: grey;
+}
