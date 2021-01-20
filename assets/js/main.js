@@ -81,7 +81,7 @@ let app = new Vue ({
   },
 
   data: {
-    courses: [
+    popDevCourses: [
       {
         name: "The Complete iOS 10 & Swift 3 Developer Course",
         type: "Development",
@@ -129,6 +129,129 @@ let app = new Vue ({
         new_price: 95,
         votein5: 4,
         poster: "assets/img/xamarin.jpg"
+      },
+    ],
+
+    courses: [
+      {
+        name: "The Complete iOS 10 & Swift 3 Developer Course",
+        type: "Development",
+        initial_price: 199.99,
+        new_price: 100,
+        votein5: 4,
+        poster: "assets/img/iOS 10.jpg"
+      },
+      {
+        name: "Web Design for Beginners: Real World Coding in HTML & CSS",
+        type: "Development",
+        initial_price: 129.99,
+        new_price: 65,
+        votein5: 4,
+        poster: "assets/img/html&css.jpg"
+      },
+      {
+        name: "GitHub Ultimate: Master Git and GitHub - Beginner to Expert",
+        type: "Development",
+        initial_price: 99.99,
+        new_price: 50,
+        votein5: 4,
+        poster: "assets/img/github.jpg"
+      },
+      {
+        name: "The Complete iOS 11 & Swift Developer Course - Build 20 Apps",
+        type: "Development",
+        initial_price: 199.99,
+        new_price: 100,
+        votein5: 4,
+        poster: "assets/img/ios11.jpg"
+      },
+      {
+        name: "Android Java MasterClass - Become an App Developer",
+        type: "Development",
+        initial_price: 99.99,
+        new_price: 50,
+        votein5: 4,
+        poster: "assets/img/android.jpg"
+      },
+      {
+        name: "CSS - The Complete Guide 2020 (incl. Flexbox, Grid & Sass)",
+        type: "Design",
+        initial_price: 199.99,
+        new_price: 100,
+        votein5: 5,
+        poster: "assets/img/css3.jpg"
+      },
+      {
+        name: "Digitally Painting Light and Color: Amateur to Master",
+        type: "Design",
+        initial_price: 139.99,
+        new_price: 70,
+        votein5: 4,
+        poster: "assets/img/frog.jpg"
+      },
+      {
+        name: "Become an Arabic Calligraphy Artist from Scratch",
+        type: "Art & Crafts",
+        initial_price: "",
+        new_price: 199.99,
+        votein5: 4,
+        poster: "assets/img/arabic.jpg"
+      },
+      {
+        name: "Google Searching Ninja!",
+        type: "Google",
+        initial_price: 89.99,
+        new_price: 45,
+        votein5: 3,
+        poster: "assets/img/ninja.jpg"
+      },
+      {
+        name: "Foundation for Mastering Watercolor Painting",
+        type: "Arts & Crafts",
+        initial_price: 19.99,
+        new_price: 10,
+        votein5: 5,
+        poster: "assets/img/paint.jpg"
+      },
+      {
+        name: "Get Wine-Smart",
+        type: "Food & Beverage",
+        initial_price: 49.99,
+        new_price: 25,
+        votein5: 4,
+        poster: "assets/img/wine.jpg"
+      },
+      {
+        name: "The Colored Pencil Drawing Course",
+        type: "Arts & Crafts",
+        initial_price: 34.99,
+        new_price: 18,
+        votein5: 4,
+        poster: "assets/img/pencil.jpg"
+      },
+      {
+        name: "Paint Realistic Watercolor and Botanicals - STUDIO BASICS",
+        type: "Arts & Crafts",
+        initial_price: 69.99,
+        new_price: 35,
+        votein5: 4,
+        poster: "assets/img/watercolor.jpg"
+      },
+      {
+        name: "Mastering Brushstrokes - Part 1",
+        type: "Arts & Crafts",
+        initial_price: 19.99,
+        new_price: 10,
+        votein5: 5,
+        poster: "assets/img/brushstrokes.jpg"
+      },
+      {
+        name: "Paint Realistic Watercolor and Botanicals - MAGNOLIAS",
+        type: "Arts & Crafts",
+        initial_price: 69.99,
+        new_price: 35,
+        votein5: 5,
+        poster: "assets/img/magnolia.jpg"
       },
     ]
   },
