@@ -267,3 +267,29 @@
   width: 100%;
   justify-content: center;
 }
+
+/* newsletter section */
+
+.newsletter{
+  height: 170px;
+  background-color: #FF4450;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter_info{
+  width: 30%;
+  margin-right: 30px;
+}
+
+.newsletter_form input[type=email]{
+  padding: 10px 20px;
+}
+
+.newsletter_form input[type=submit]{
+  padding: 10px 20px;
+  background-color: #457992;
+  color: WHITE;
+  text-decoration: solid;
+}

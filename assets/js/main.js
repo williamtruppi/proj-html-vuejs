@@ -216,6 +216,7 @@ let app = new Vue ({
         votein5: 5,
         poster: "assets/img/magnolia.jpg"
       },
+      
     ],
 
     courseArray: []
@@ -268,7 +269,6 @@ let app = new Vue ({
     this.courseArray = this.courses;
 
     this.reduceOtherCourses();
-
 
     console.log(this.courses);
   }
