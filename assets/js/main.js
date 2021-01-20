@@ -256,7 +256,25 @@ let app = new Vue ({
     ]
   },
 
+  methods: {
+    showOtherCourses () {
+      console.log("ciao");
+      
+      for(let i = 12; i < this.courses.length; i++ ) {
+        this.courses[i].visible = true;
+      }
+    }
+  },
+
   mounted () {
+    this.courses.forEach(elem => {
+      Vue.set(elem, "visible", true);
+    })
+
+    for(let i = 12; i < this.courses.length; i++){
+      this.courses[i].visible = false;
+    }
+
     console.log(this.courses);
   }
 

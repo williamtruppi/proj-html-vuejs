@@ -248,5 +248,17 @@
 }
 
 .type_courses li{
+  width: fit-content;
   margin: 0 10px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.type_courses li:hover{
+  background-color: #dbe2ec;
+  border-radius: 50%;
+}
+
+.recent_courses .course_card{
+  margin-bottom: 15px;
 }

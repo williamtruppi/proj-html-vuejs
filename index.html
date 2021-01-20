@@ -55,7 +55,7 @@
           <!-- apertura course box -->
           <div class="course_box d-flex">
             <!-- apertura course card -->
-            <div class="course_card" v-for="(course, index) in courses" v-if="index < 6">
+            <div class="course_card" v-for="(course, index) in courses" v-if="index < 6 && course.type === 'Development'">
               <img :src="`${course.poster}`" alt="">
               <div class="course_card_info">
                 <p>{{course.type}} ></p>
@@ -107,7 +107,7 @@
           <!-- apertura course box -->
           <div class="course_box d-flex">
             <!-- apertura course card -->
-            <div class="course_card" v-for="(course, index) in courses" v-if="index < 12">
+            <div class="course_card" v-for="(course, index) in courses" v-if="course.visible">
               <img :src="`${course.poster}`" alt="">
               <div class="course_card_info">
                 <p>{{course.type}} ></p>
@@ -122,23 +122,14 @@
                   <p><strong>€{{course.new_price}}</strong> </p>
                 </div>
               </div>
+              
             </div>
-            <div class="course_card" v-else>
-              <img :src="`${course.poster}`" alt="">
-              <div class="course_card_info">
-                <p>{{course.type}} ></p>
-                <h5>{{course.name}}</h5>
-                <hr>
-                <div class="course_card_info_vote">
-                  <i class="fas fa-star" v-for="star in course.votein5"></i><i class="far fa-star"
-                    v-for="star in (5 - course.votein5)"></i>
-                </div>
-                <div class="course_card_info_price">
-                  <p id="initial_price">€{{course.initial_price}}</p>
-                  <p><strong>€{{course.new_price}}</strong> </p>
-                </div>
-              </div>
-            </div>
+            
+            <input type="button" value="SHOW ALL" @click="showOtherCourses()">
+          
+
+            
+
             <!-- chiusura course card -->
           </div>
           <!-- chiusrua course box -->
