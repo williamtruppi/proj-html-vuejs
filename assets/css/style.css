@@ -262,3 +262,7 @@
 .recent_courses .course_card{
   margin-bottom: 15px;
 }
+
+#show_all{
+  margin: auto;
+}

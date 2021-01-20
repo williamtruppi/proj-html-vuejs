@@ -122,15 +122,11 @@
                   <p><strong>€{{course.new_price}}</strong> </p>
                 </div>
               </div>
-              
             </div>
-            
-            <input type="button" value="SHOW ALL" @click="showOtherCourses()">
-          
-
-            
-
             <!-- chiusura course card -->
+
+            <input type="button" value="SHOW ALL" id="show_all" @click="showOtherCourses()">
+            <input type="button" value="REDUCE ALL" id="reduce_all" @click="reduceOtherCourses()">
           </div>
           <!-- chiusrua course box -->
         </div>

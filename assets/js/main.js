@@ -259,9 +259,15 @@ let app = new Vue ({
   methods: {
     showOtherCourses () {
       console.log("ciao");
-      
       for(let i = 12; i < this.courses.length; i++ ) {
         this.courses[i].visible = true;
+      }
+    },
+
+    reduceOtherCourses () {
+      console.log("ciao");
+      for(let i = 12; i < this.courses.length; i++ ) {
+        this.courses[i].visible = false;
       }
     }
   },
