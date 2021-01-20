@@ -92,14 +92,7 @@
         <h1>Recent courses</h1>
         <!-- apertura lista type_courses -->
         <ul class="type_courses d-flex">
-          <li>All Categories</li>
-          <li>Business</li>
-          <li>Design</li>
-          <li>Development</li>
-          <li>IT & Software</li>
-          <li>Lifestyle</li>
-          <li>Marketing</li>
-          <li>Office Productivity</li>
+          <li v-for="type in courseTypes" @click="filterByType(type)">{{type}}</li>
         </ul>
         <!-- chiusura lista type_courses -->
 
@@ -107,7 +100,7 @@
           <!-- apertura course box -->
           <div class="course_box d-flex">
             <!-- apertura course card -->
-            <div class="course_card" v-for="(course, index) in courses" v-if="course.visible">
+            <div class="course_card" v-for="(course, index) in courseArray" v-if="course.visible">
               <img :src="`${course.poster}`" alt="">
               <div class="course_card_info">
                 <p>{{course.type}} ></p>
@@ -125,8 +118,11 @@
             </div>
             <!-- chiusura course card -->
 
-            <input type="button" value="SHOW ALL" id="show_all" @click="showOtherCourses()">
-            <input type="button" value="REDUCE ALL" id="reduce_all" @click="reduceOtherCourses()">
+            <div class="buttons_course d-flex">
+              <input type="button" value="SHOW ALL" id="btn_base" @click="showOtherCourses()">
+              <input type="button" value="REDUCE ALL" id="btn_base" @click="reduceOtherCourses()">
+            </div>
+            
           </div>
           <!-- chiusrua course box -->
         </div>
