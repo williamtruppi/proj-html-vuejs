@@ -56,7 +56,7 @@ let app = new Vue ({
 
             <ul class="d-flex">
               <li><a href="#"><i class="far fa-user"></i> Log in</a></li>
-              <li><a href="#" id="sign_up">SIGN UP</a></li>
+              <li><a href="#" id="btn_base">SIGN UP</a></li>
               <li><a href="#"><i class="far fa-bookmark"></i></a></li>
             </ul>
           

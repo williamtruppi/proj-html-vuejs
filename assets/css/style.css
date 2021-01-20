@@ -101,7 +101,7 @@
   color: grey;
 }
 
-#sign_up{
+#btn_base{
   padding: 10px 15px;
   color: white;
   background-color: #FF4450;
@@ -157,12 +157,95 @@
 
 .course_box{
   width: 100%;
+  margin-top: 20px;
 }
 
 .course_card {
   width: calc(100% / 6);
+  height: fit-content;
+  margin: 0 5px;
+  border: 1px solid grey;
+}
+
+.course_card p{
+  color: grey;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .course_card img{
-  width: 100px;
+  width: 100%
+}
+
+.course_card hr {
+  width: 85%;
+  margin: 10px auto;
+}
+
+.course_card_info{
+  padding: 7px;
+}
+
+.course_card_info_vote i{
+  color: orangered;
+  font-size: 12px;
+}
+
+.course_card_info_vote, .course_card_info_price{
+  display: inline-block;
+}
+
+.course_card_info_price{
+  float: right;
+}
+
+#initial_price{
+  font-size: 10px;
+  text-decoration:line-through;
+}
+
+/* limitless jumbotron */
+
+.limitless_jumbotron{
+  height: 400px;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70%;
+  align-items: center;
+}
+
+.limitless_info{
+  width: 45%;
+  height: fit-content;
+  margin-left: 5%;
+}
+
+.limitless_info h1{
+  font-size: 50px;
+}
+
+.limitless_info p{
+  font-size: 18px;
+}
+
+.limitless_info > a{
+  margin-top: 100px;
+}
+
+/* recent courses */
+
+.recent_courses{
+  padding: 40px 0;
+  text-align: center;
+}
+
+.type_courses{
+  list-style: none;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.type_courses li{
+  margin: 0 10px;
 }
