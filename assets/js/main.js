@@ -224,7 +224,7 @@ let app = new Vue ({
     courseArray: [],
 
     /* array dei corsi più popolari */
-    popCourses: []
+    popCourses: [],
 
   },
 
@@ -264,9 +264,6 @@ let app = new Vue ({
       
     },
 
-    arrowRight() {
-      
-    }
   },
 
   mounted () {
@@ -283,8 +280,44 @@ let app = new Vue ({
 
     this.reduceOtherCourses();
 
+    
+
     console.log(this.courses);
     console.log(this.popCourses);
   }
 
 });
+
+const prev  = document.querySelector('.fa-caret-square-left');
+console.log(prev);
+const next = document.querySelector('.fa-caret-square-right');
+console.log(next);
+
+const courseBox = document.querySelector('.popular_courses .course_box');
+
+let carouselWidth = document.querySelector('.container').offsetWidth;
+
+window.addEventListener('resize', () => {
+  carouselWidth = document.querySelector('.popular_courses > .carousel-container').offsetWidth;
+})
+
+let index = 0;
+
+next.addEventListener('click', () => {
+  index++;
+  prev.classList.add('show');
+  courseBox.style.transform = `translateX(-${index * carouselWidth}px)`;
+  
+  if (courseBox.offsetWidth - (index * carouselWidth) < carouselWidth) {
+    next.classList.add('hide');
+  }
+})
+
+prev.addEventListener('click', () => {
+  index--;
+  next.classList.remove('hide');
+  if (index === 0) {
+    prev.classList.remove('show');
+  }
+  courseBox.style.transform = `translateX(-${index * carouselWidth}px)`;
+})
