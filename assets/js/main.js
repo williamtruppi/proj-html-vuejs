@@ -114,6 +114,15 @@ let app = new Vue ({
         </div>
       </div>
       `
+    },
+
+    "footer_bottom": {
+      template: `
+        <div class="footer_bottom d-flex">
+          <img src="assets/img/footer-logo2x-50x56.png" alt="">
+          <p>Copyright 2020. MasterStudy Theme by Boolean</p>
+        </div>
+      `
     }
   },
 

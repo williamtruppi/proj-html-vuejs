@@ -415,7 +415,6 @@ footer ul{
 .footer_top{
   width: 80%;
   height: 80%;
-  justify-content: center;
   color: white;
   margin: auto;
 }
@@ -425,13 +424,18 @@ footer ul{
   height: fit-content;
 }
 
+.social_network{
+  width: 300px;
+}
+
 .social_network ul{
   flex-wrap: wrap;
 }
 
 .social_network i{
+  /* flex-basis: calc(100% / 4); */
   padding: 10px;
-  font-size: 30px;
+  font-size: calc(100% / 0.5);
   border-radius: 100%;
   margin: 15px 5px 10px 0;
 }
@@ -477,11 +481,29 @@ footer ul{
 }
 
 .footer_top .box{
-  margin: 40px 20px 0 20px
+  margin: 40px 20px 0 0px
 }
 
 .box > strong{
   margin-bottom: 15px;
 }
 
+/* footer_bottom */
+
+
+.footer_bottom{
+  height: 20%;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.footer_bottom img{
+  height: 70%;
+}
+
+.footer_bottom p{
+  margin-left: 15px;
+}
 
