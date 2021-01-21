@@ -95,6 +95,7 @@ let app = new Vue ({
       "Food & Beverage"
     ],
 
+    /* array di oggetti contenitore */
     courses: [
       {
         name: "The Complete iOS 10 & Swift 3 Developer Course",
@@ -219,7 +220,11 @@ let app = new Vue ({
       
     ],
 
-    courseArray: []
+    /* array di tutti gli oggetti visualizzati nella section all categories */
+    courseArray: [],
+
+    /* array dei corsi più popolari */
+    popCourses: []
 
   },
 
@@ -257,6 +262,10 @@ let app = new Vue ({
     
       })
       
+    },
+
+    arrowRight() {
+      
     }
   },
 
@@ -264,6 +273,10 @@ let app = new Vue ({
 
     this.courses.forEach(elem => {
       Vue.set(elem, "visible", true);
+
+      if (elem.votein5 > 3){
+        this.popCourses.push(elem)
+      }
     })
 
     this.courseArray = this.courses;
@@ -271,6 +284,7 @@ let app = new Vue ({
     this.reduceOtherCourses();
 
     console.log(this.courses);
+    console.log(this.popCourses);
   }
 
 });

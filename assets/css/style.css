@@ -293,3 +293,31 @@
   color: WHITE;
   text-decoration: solid;
 }
+
+/* popular courses */
+
+.popular_courses{
+  text-align: center;
+  padding: 50px 0;
+}
+
+.popular_courses .course_box{
+  width: 100%;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.popular_courses .course_card{
+  min-width: calc(100% / 6 - 10px);
+}
+
+.arrow_buttons_carousel{
+  margin-top: 40px;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.arrow_buttons_carousel i{
+  margin-right: 15px;
+}

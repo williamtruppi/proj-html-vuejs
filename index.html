@@ -143,6 +143,44 @@
       </section>
       <!-- chiusura section newsletter -->
 
+      <!-- apertura popular_courses -->
+      <div class="popular_courses">
+        <h1>Popular Courses</h1>
+        <p>Discover our most popular courses for self learning</p>
+
+        <div class="container">
+          <!-- apertura course box -->
+          <div class="course_box d-flex">
+            <!-- apertura course card -->
+            <div class="course_card" v-for="(course, index) in popCourses">
+              <img :src="`${course.poster}`" alt="">
+              <div class="course_card_info">
+                <p>{{course.type}} ></p>
+                <h5>{{course.name}}</h5>
+                <hr>
+                <div class="course_card_info_vote">
+                  <i class="fas fa-star" v-for="star in course.votein5"></i><i class="far fa-star"
+                    v-for="star in (5 - course.votein5)"></i>
+                </div>
+                <div class="course_card_info_price">
+                  <p id="initial_price">€{{course.initial_price}}</p>
+                  <p><strong>€{{course.new_price}}</strong> </p>
+                </div>
+              </div>
+            </div>
+            <!-- chiusura course card -->
+        
+          </div>
+          <!-- chiusrua course box -->
+
+          <div class="arrow_buttons_carousel d-flex">
+            <i class="far fa-caret-square-left"></i>
+            <i class="far fa-caret-square-right"></i>
+          </div>
+        </div>
+      </div>
+      <!-- chiusura popular_courses -->
+
     </main>
     <!-- chiusura main -->
 
