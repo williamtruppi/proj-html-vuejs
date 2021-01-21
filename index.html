@@ -55,7 +55,7 @@
           <!-- apertura course box -->
           <div class="course_box d-flex">
             <!-- apertura course card -->
-            <div class="course_card" v-for="(course, index) in courses" v-if="index < 6 && course.type === 'Development'">
+            <div class="course_card" v-for="(course, index) in popCourses" v-if="index < 6 && course.type === 'Development'">
               <img :src="`${course.poster}`" alt="">
               <div class="course_card_info">
                 <p>{{course.type}} ></p>
