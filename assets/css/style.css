@@ -96,9 +96,12 @@
   margin: 0 5px;
 }
 
+.navmiddle_right i {
+  margin-right: 5px;
+}
+
 .navmiddle_right a{
   text-decoration: none;
-  color: grey;
 }
 
 .btn_base{
@@ -222,16 +225,22 @@
   margin-left: 5%;
 }
 
+.limitless_info .btn_base{
+  margin-left: 0;
+}
+
 .limitless_info h1{
   font-size: 50px;
 }
 
 .limitless_info p{
   font-size: 18px;
+  margin: 25px 0;
 }
 
 .limitless_info > a{
   margin-top: 100px;
+  text-decoration: none;
 }
 
 /* recent courses */
