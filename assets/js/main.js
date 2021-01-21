@@ -77,6 +77,43 @@ let app = new Vue ({
           </ul>
         </div>
       `
+    },
+
+    "footer_top": {
+      template: `
+        <div class="footer_top d-flex">
+        <div class="box about">
+          <strong>ABOUT</strong>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere deleniti iure accusamus sapiente assumenda ipsum temporibus maiores at quidem, voluptates eius voluptas quod nostrum, eum facilis corrupti tenetur quia voluptatibus.</p>
+        </div>
+
+        <div class="box contact">
+          <strong>CONTACT</strong>
+          <p>USA, California 20, First Avenue, California</p>
+          <p>Tel.: +1 212 458 300 32</p>
+          <p>Fax: +1 212 375 24 14</p>
+          <p>info@masterstudy.com</p>
+        </div>
+
+        <div class="box social_network">
+          <strong>SOCIAL NETWORK</strong>
+          <ul class="d-flex">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href=""></a><i class="fab fa-pinterest"></i></li></i>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fas fa-basketball-ball"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+            <li><a href=""><i class="fab fa-skype"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="box udemy">
+          <img src="assets/img/udemy.jpg" alt="">
+        </div>
+      </div>
+      `
     }
   },
 
