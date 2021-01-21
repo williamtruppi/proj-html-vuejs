@@ -56,7 +56,7 @@ let app = new Vue ({
 
             <ul class="d-flex">
               <li><a href="#"><i class="far fa-user"></i> Log in</a></li>
-              <li><a href="#" id="btn_base">SIGN UP</a></li>
+              <li><a href="#" class="btn_base">SIGN UP</a></li>
               <li><a href="#"><i class="far fa-bookmark"></i></a></li>
             </ul>
           
@@ -295,7 +295,7 @@ console.log(next);
 
 const courseBox = document.querySelector('.popular_courses .course_box');
 
-let carouselWidth = document.querySelector('.container').offsetWidth;
+let carouselWidth = document.querySelector('.popular_courses').offsetWidth;
 
 window.addEventListener('resize', () => {
   carouselWidth = document.querySelector('.popular_courses > .carousel-container').offsetWidth;
@@ -308,6 +308,7 @@ next.addEventListener('click', () => {
   prev.classList.add('show');
   courseBox.style.transform = `translateX(-${index * carouselWidth}px)`;
   
+  console.log(courseBox.offsetWidth - (index * carouselWidth) < carouselWidth);
   if (courseBox.offsetWidth - (index * carouselWidth) < carouselWidth) {
     next.classList.add('hide');
   }

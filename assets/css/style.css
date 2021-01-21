@@ -101,7 +101,7 @@
   color: grey;
 }
 
-#btn_base{
+.btn_base{
   padding: 10px 15px;
   color: white;
   background-color: #FF4450;
@@ -299,6 +299,10 @@
 .popular_courses{
   text-align: center;
   padding: 50px 0;
+  background-color: #F0F4FA;
+}
+
+.popular_courses .container{
   overflow-x: hidden;
 }
 
@@ -307,11 +311,17 @@
   margin-top: 20px;
   flex-wrap: nowrap;
   display: inline-flex;
-  transition: transform 0.5s;
+  transition: transform 1s;
 }
 
 .popular_courses .course_card{
   min-width: calc(100% / 6 - 10px);
+  background-color: white;
+}
+
+.course_card:hover{
+  transition-duration: 1s;
+  transform: scale(1.1);
 }
 
 .arrow_buttons_carousel{
@@ -322,6 +332,7 @@
 
 .arrow_buttons_carousel i{
   margin-right: 15px;
+  background-color: white;     
 }
 
 .hide{
@@ -330,4 +341,36 @@
 
 .show{
   display: block;
+}
+
+
+/* instructor_business */
+
+.instructor_business{
+  background-color: white;
+  padding: 50px 0;
+}
+
+.instructor_business .btn_base{
+  margin: 0;
+  cursor: pointer;
+}
+
+.instructor, .access_business{
+  padding: 40px 15px;
+  width: 50%;
+  border: 3px solid #F0F4FA;
+  align-items: center;
+}
+
+.instructor{
+  margin-right: 25px;
+}
+
+.instructor_info, .access_business_info{
+ padding-left: 20px;
+}
+
+.instructor p, .access_business p{
+  margin: 30px 0;
 }
